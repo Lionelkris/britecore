@@ -29,7 +29,7 @@ def request_feature():
 	cl=str(request.form['client'])
 	pr=int(request.form['priority'])
 	res=Features.query.filter_by(client=cl).all()
-	print res
+	print(res)
 	pri_list=[]
 	for i in res:
 		pri_list.append(i.priority)
