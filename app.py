@@ -25,7 +25,7 @@ def index():
 
 @app.route('/request_feature', methods=['POST'])
 def request_feature():
-	print request.form['title'], request.form['message'], request.form['client'], request.form['priority'], request.form['tdate'], request.form['parea']
+	print(request.form['title'], request.form['message'], request.form['client'], request.form['priority'], request.form['tdate'], request.form['parea'])
 	cl=str(request.form['client'])
 	pr=int(request.form['priority'])
 	res=Features.query.filter_by(client=cl).all()
