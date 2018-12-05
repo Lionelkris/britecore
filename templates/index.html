@@ -8,9 +8,9 @@
   <fieldset>
     <legend>Feature Request</legend>
     Title<br>
-    <input type="text" name="title"><br>
+    <input type="text" name="title" required><br>
     Description<br>
-    <textarea name="message" rows="10" cols="30"></textarea><br>
+    <textarea name="message" rows="10" cols="30" required></textarea><br>
     <br>
     Client:
     <select name="client">
@@ -21,10 +21,10 @@
     <br>
     <br>
     Client Priority (a number between 1 and 10000)<br>
-    <input type="number" name="priority" min="1" max="10000"><br>
+    <input type="number" name="priority" min="1" max="10000" required><br>
     <br>
     Target Date <br>
-    <input type="date" name="tdate"><br>
+    <input type="date" name="tdate" required><br>
     <br>
     Product Area:
     <select name="parea">
